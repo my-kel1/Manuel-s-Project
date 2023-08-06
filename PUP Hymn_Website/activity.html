@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="us-EN">
+    <head>
+        <meta charset="utf-8" />
+        <title>PUP Hymn</title>
+        <link rel="stylesheet" href="<!-- NAME NG CSS FILE MO -->" />
+    </head>
+    <body>
+        <img src="<!-- LAGAY MO DITO PATH NG FILE -->" />
+        <!-- pwede ka mag-add ng <p> dito if ever may want ka ilagay na text-->
+        </div>
+        <audio class="<!-- IKAW BAHALA -->" controls autoplay>
+            <source src="<!-- PATH NG AUDIO -->" type="audio/mpeg" />            
+        </audio>
+        </div>
+        <div class="<!-- IKAW BAHALA -->">
+            <!-- IBAHIN MO YUNG TIME KAHIT DECIMAL LANG -->
+            12.500 | SINTANG PAARALAN
+            14.500 | TANGLAW KA NG BAYAN
+            18.500 | PANDAYAN NG ISIP NG KABATAAN
+            24.000 | KAMI AY DUMATING NANG SALAT SA YAMAN
+            29.500 | HANAP NG DUNONG AY IYONG ALAY
+            35.000 | ANG LAYUNIN MONG MAKATAO
+            41.000 | DINARANGAL ANG PILIPINO
+            47.000 | Ang iyong aral, diwa, adhikang taglay
+            53.000 | PUP, AMING GABAY
+            56.500 | PAARALANG DAKILA
+            62.500 | PUP, PINAGPALA
+            67.500 | GAGAMITIN ANG KARUNUNGAN
+            73.500 | MULA SA IYO, PARA SA BAYAN
+            80.500 | ANG IYONG ARAL, DIWA, ADHIKANG TAGLAY
+            85.500 | PUP, AMING GABAY
+            88.500 | PAARALANG DAKILA
+            94.500 | PUP, PINAGPALA
+        </div>
+        <script>
+            const player = document.querySelector('.<!-- CLASS SA AUDIO MO -->')
+            const lyrics = document.querySelector('.<!-- CLASS SA LYRICS MO -->')
+            const lines = lyrics.textContent.trim().split('\n')
+
+            lyrics.removeAttribute('style')
+            lyrics.innerText = ''
+
+            let syncLyrics = []
+
+            lines.map((line, index) => {
+                const [time, text] = line.trim().split('|')
+                syncLyrics.push({'start': time.trim(), 'text': text.trim()})
+            })
+
+            player.addEventListener('timeupdate', () => {
+            syncLyrics.forEach((item) => {
+                    console.log(item)
+                    if (player.currentTime >= item.start) lyrics.innerText = item.text
+                })
+            })
+        </script>
+    </body>
+</html>
