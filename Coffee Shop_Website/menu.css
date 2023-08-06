@@ -1,0 +1,581 @@
+body {
+    margin: 10%;
+    height: 1000px;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.header {
+    position: fixed;
+}
+
+.hdrBanner {
+    left: -2%;
+    top: -10%;
+    width: 1400px;
+    height: 150px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#logo {
+    left: 2%;
+    top: 0.5%;
+    height: 15%;
+    width: 7.5%;
+    position: fixed;
+}
+
+#home {
+    top: 35px;
+    left: 140px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    position: fixed;
+    font-family: Arial;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#home:hover {
+    color: burlywood;
+}
+
+#menu {
+    top: 35px;
+    left: 230px;
+    color: black;
+    position: fixed;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menu:hover {
+    color: burlywood;
+}
+
+#jobs {
+    top: 35px;
+    left: 320px;
+    color: black;
+    font-size: 20px;
+    position: fixed;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#jobs:hover {
+    color: burlywood;
+}
+
+#orders {
+    top: 35px;
+    left: 1090px;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: fixed;
+    font-weight: 700;
+    font-family: Arial;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#orders:hover {
+    color: whitesmoke;
+}
+
+#orders:before {
+    content: "";
+    border-radius: 20px 20px 20px 20px;
+    position: absolute;
+    background: #383736;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+}
+
+#orders:hover:before {
+    top: 0;
+}
+
+.promo-banner {
+    background-image: url("images/menu-banner.png");
+    position: absolute;
+    height: 200px;
+    width: 1245px;
+    left: 0.7%;
+    top: 17vh;
+}
+
+.banner1 {
+    width: 420px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 2%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#coffee-title {
+    top: 49.5vh;
+    left: 42%;
+    color: black;
+    font-size: 50px;
+    letter-spacing: -2px;
+    position: absolute;
+    font-weight: 1000;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px white;
+}
+
+.banner2 {
+    width: 420px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#americano-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 70%;
+    left: 24.4vh;
+}
+
+#americano-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 104vh;
+    left: 31.5vh;
+}
+
+#americano-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 108vh;
+    left: 31.5vh;
+}
+
+.container-americano {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 73vh;
+    left: 26.3vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-americano {
+    top: 122vh;
+    left: 38vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-americano:hover {
+    color: green;
+}
+
+#mocha-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 70%;
+    left: 88.7vh;
+}
+
+#mocha-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 104vh;
+    left: 95.5vh;
+}
+
+#mocha-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 108vh;
+    left: 95.5vh;
+}
+
+.container-mocha {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 73vh;
+    left: 90.4vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-mocha {
+    top: 122vh;
+    left: 101.5vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-mocha:hover {
+    color: green;
+}
+
+#latte-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 70%;
+    left: 154.5vh;
+}
+
+#latte-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 104vh;
+    left: 161.1vh;
+}
+
+#latte-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 108vh;
+    left: 161.1vh;
+}
+
+.container-latte {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 73vh;
+    left: 156.3vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-latte {
+    top: 122vh;
+    left: 167vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-latte:hover {
+    color: green;
+}
+
+.banner3 {
+    width: 420px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 139.5%;
+    left: 2%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#pastries-title {
+    top: 129vh;
+    left: 40.5%;
+    color: black;
+    font-size: 50px;
+    letter-spacing: -2px;
+    position: absolute;
+    font-weight: 1000;
+    font-family: Arial;
+    text-shadow: 2px 2px 2px white;
+}
+
+.banner4 {
+    width: 420px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 139.5%;
+    left: 65%;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#cCake-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 150%;
+    left: 24.4vh;
+}
+
+#cCake-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 184.1vh;
+    left: 31.5vh;
+}
+
+#cCake-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 188.1vh;
+    left: 31.5vh;
+}
+
+.container-cCake {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 153vh;
+    left: 26.3vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-cCake {
+    top: 202vh;
+    left: 38vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-cCake:hover {
+    color: green;
+}
+
+#sCake-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 150%;
+    left: 89.7vh;
+}
+
+#sCake-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 184.1vh;
+    left: 96.5vh;
+}
+
+#sCake-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 188.1vh;
+    left: 96.5vh;
+}
+
+.container-sCake {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 153vh;
+    left: 91.4vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-sCake {
+    top: 202vh;
+    left: 102.5vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-sCake:hover {
+    color: green;
+}
+
+#rCake-img {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 150%;
+    left: 154.5vh;
+}
+
+#rCake-name {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 184.1vh;
+    left: 161.7vh;
+}
+
+#rCake-price {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    position: absolute;
+    font-weight: bolder;
+    font-family: Arial;
+    top: 188.1vh;
+    left: 161.7vh;
+}
+
+.container-rCake {
+    height: 265px;
+    width: 230px;
+    background-color: white;
+    position: absolute;
+    top: 153vh;
+    left: 156.3vh;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+
+#order-rCake {
+    top: 202vh;
+    left: 167.5vh;
+    width: 110px;
+    height: 30px;
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 20px;
+    position: absolute;
+    font-weight: 700;
+    font-family: Arial;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in
+}
+
+#order-rCake:hover {
+    color: green;
+}
