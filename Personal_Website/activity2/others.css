@@ -1,0 +1,116 @@
+body {
+    background-color: #393E46;
+    background-image: url('images/bg.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    margin-bottom: 5%;
+}
+
+#banner {
+    width: 1400px;
+    height: 120px;
+    position: fixed;
+    background-color: rgb(109, 152, 134, .5);
+    left: -2%;
+    top: -10%
+}
+
+#RDmain {
+    position: fixed;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 27px;
+    left: 31.2%;
+}
+
+#RDaboutme {
+    position: fixed;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 27px;
+    left: 45.2%;
+}
+
+#RDothers {
+    position: fixed;
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: #F94A29;
+    text-shadow: 1px 1px black;
+    font-size: 20px;
+    letter-spacing: 1px;
+    top: 27px;
+    left: 61.2%;
+}
+
+#container {
+    width: 750px;
+    height: 300px;
+    border: 3px solid;
+    position: absolute;
+    border-color: #31363d;
+    background-color: #393E46;
+    top: 150px;
+    left: 262px;
+}
+
+#INFOS {
+    position: absolute;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: #F94A29;
+    text-shadow: 1px 1px black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    top: 150px;
+    left: 39%;
+}
+
+#infos {
+    position: absolute;
+    font-size: 12px;
+    font-family: Verdana;
+    color: white;
+    text-shadow: .5px .5px black;
+    top: 220px;
+    left: 296px;
+    text-align: center;
+}
+
+#contacts {
+    position: absolute;
+    font-family: Helvetica;
+    font-weight: 700;
+    color: #F94A29;
+    text-shadow: 1px 1px black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    top: 290px;
+    left: 41%;
+}
+
+#contactInfos {
+    position: absolute;
+    font-size: 12px;
+    font-family: Verdana;
+    color: white;
+    text-shadow: .5px .5px black;
+    top: 360px;
+    left: 527px;
+    text-align: center;
+}
