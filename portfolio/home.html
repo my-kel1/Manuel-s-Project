@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e28edae802.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome CDNJS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Imported Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Jersey+25+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation Bar -->
+    <div class="nav-bar fixed">
+        <!-- Dropdown Structure -->
+        <ul id="nav-option" class="dropdown-content dropdown">
+            <li class="active"><a style="color: black;" class="dp-cont" href="home.html">Home</a></li>
+            <li class="divider"></li>
+            <li><a style="color: black;" class="dp-cont" href="watch.html">Login</a></li>
+            <li class="divider"></li>
+            <li><a style="color: black;" class="dp-cont" href="watch.html">Events</a></li>
+            <li class="divider"></li>
+            <li><a style="color: black;" class="dp-cont" href="listen.html">Contacts</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper fixed-navbar">
+                <a href="" class="brand-logo left" style="color: white;"><i class="fa-solid fa-martini-glass-citrus"></i></a>
+                <ul id="nav-mobile" class="right style-options">
+                    <li><a class='options' href="sass.html">Login</a></li>
+                    <li><a class='options' href="">Events</a></li>
+                    <li><a class='options' href="">Contacts</a></li>
+                    <li><a class="dropdown-trigger drop-options" data-target="nav-option" href=""><i class="fa-solid fa-bars" style="color: #EEEEEE;"></i></a></li>
+                </ul>
+                <ul id="nav-mobile" class="right">
+                    
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="intro">
+        <div class="intro-title column">
+            <p class="intro-title-top"><mark>&nbsp Club and Cocktails &nbsp</mark><h1>SOLACE</h1></p>
+            <button class="rsrv-btn" onclick=projects()>Reservations</button>
+        </div>
+        <div class="intro-desc">
+            <blockquote>
+                Step into Solace Club and Cocktails, a serene oasis. Our club offers a tranquil escape where expertly crafted cocktails and refined ambiance come together. Join us for an unforgettable experience of relaxation and indulgence.
+            </blockquote>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">  
+            <img src="images/home/bg-1.png" alt="Parallax Image-1">
+        </div>
+    </div>
+    <div class="section">
+        <div class="row container">
+            <h2 class="header">Make Memories Memorable</h2>
+            <p>
+                Solace Club and Cocktails invites you to experience a haven of sophistication and tranquility nestled in the heart of [city or location]. Immerse yourself in an atmosphere of refined elegance, where handcrafted cocktails and curated ambiance intertwine to create unforgettable moments. From evenings of relaxation to vibrant events, Solace Club offers a sanctuary for those seeking solace and indulgence. Join us and elevate your experience to new heights of luxury and enjoyment.
+            </p>
+        </div>
+    </div>
+    <div class="parallax-container parallax2">
+        <div class="parallax">  
+            <img src="images/home/bg-2.png" alt="Parallax Image-2">
+        </div>
+        <div class="buttons">
+            <div class="container-btn waves-effect waves-light" style="background-image: url(images/home/offers.png);" onclick=ponyo()>OFFERS</div>
+            <div class="container-btn waves-effect waves-light" style="background-image: url(images/home/event.png);" onclick=ponyo()>EVENTS</div>
+            <div class="container-btn waves-effect waves-light" style="background-image: url(images/home/about.png);" onclick=ponyo()>ABOUT US</div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="desc">
+            <div class="carousel">
+                <div class="carousel-item" style="background-image: url(images/home/c1.png);">
+                    <div class="corousel-container"></div>
+                </div>
+                <div class="carousel-item" style="background-image: url(images/home/c2.png);">
+                    <div class="corousel-container"></div>
+                </div>
+                <div class="carousel-item" style="background-image: url(images/home/c3.png);">
+                    <div class="corousel-container"></div>
+                </div>
+            </div>
+        </div>
+        <div class="desc">
+            <h2>EVENTS</h2>
+            <p>
+                From themed nights to live music performances, Solace Club hosts an array of unforgettable events. Indulge in the perfect blend of entertainment and ambiance as Solace Club transforms each event into a memorable experience. Join us for evenings filled with laughter, music, and indulgence. Stay tuned for our upcoming lineup and immerse yourself in the vibrant atmosphere of Solace Club.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="main-footer">
+            <h5>Solace Club and Cocktails</h5>
+            <p class="footer-p">Experience the elegance and sophistication of Solace Club, where every visit promises an unforgettable journey of relaxation and indulgence.<br>Stay Connected with Solace Club: Follow Us on Social Media for Updates and Special Offers</p>
+            <div class="links">
+                <i class="fa-brands fa-facebook soc"></i>
+                <i class="fa-brands fa-instagram soc"></i>
+                <i class="fa-brands fa-x-twitter soc"></i>
+            </div>
+        </div>  
+        <div class="sub-footer">
+            <p>&copy; Manuel 2024</p>
+        </div>
+    </footer>
+
+    <!-- JQuery CDJNS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/25ea7b53f0.js" crossorigin="anonymous"></script>
+
+    <!-- Dropdown Script -->
+    <script>
+        $(".dropdown-trigger").dropdown();
+
+        $(document).ready(function(){
+        $('.parallax').parallax();
+        });
+
+        $(document).ready(function(){
+            $('.carousel').carousel({
+                padding: 200
+            });
+            autoplay();
+            function autoplay(){
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
+        });
+
+        // Direct
+        function projects() {
+            window.location.href = 'projects.html';
+        }
+    </script>
+</body>
+</html>
