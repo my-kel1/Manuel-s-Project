@@ -26,7 +26,7 @@ class Main(QMainWindow):
         self.label_prog.move(150, 70)
 
         # label for url input line
-        self.label_url = QLabel("URL: ", self)
+        self.label_url = QLabel("URL:  ", self)
         self.label_url.move(50, 27)
 
         # label for file type combo box
@@ -36,20 +36,20 @@ class Main(QMainWindow):
         # input url
         self.entry_url = QLineEdit(self)
         self.entry_url.resize(250, 20)
-        self.entry_url.move(80, 30)
+        self.entry_url.move(90, 30)
 
         # choose file type (that will be downloaded)
         self.cb = QComboBox(self)
         self.cb.addItem("mp4")
         self.cb.addItem("mp3")
         self.cb.move(110, 65)
-        self.cb.resize(55, 20)
+        self.cb.resize(80, 20)
 
         # button to download url
         # connect to download() event
         self.btn_download = QPushButton("Download", self)
         self.btn_download.clicked.connect(self.initiate)
-        self.btn_download.resize(65, 22)
+        self.btn_download.resize(75, 25)
         self.btn_download.move(266, 64)
 
     # thread function. prevents window from freezing
